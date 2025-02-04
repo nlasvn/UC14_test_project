@@ -5,15 +5,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <script src="{% static 'scripts/script.js'%}"></script>
     <title>Document</title>
 </head>
 
 <body>
     <header id="header-page">
-        <h1>Hello from this wonderful index.html!</h1>
+        <span>Hello from this wonderful index.html!</span>
         <!-- <img src="https://en.touhouwiki.net/images/c/c9/Sanae_Whos_Who.png" alt="Sanae" width="500"> -->
-        <img src="{% static 'image/Sanae_Whos_Who.png' %}" alt="Sanae" width="400">
+        <figure id="images-header">
+            <img src="{% static 'image/Reimu_Whos_Who.png' %}" alt="Reimu">
+            <img src="{% static 'image/Marisa_Whos_Who.png' %}" alt="Marisa">
+            <img src="{% static 'image/Sanae_Whos_Who.png' %}" alt="Sanae">
+        </figure>
+        <span id="span">1</span>
+        <button id="add_1">Add 1</button>
+
     </header>
 
 </body>
